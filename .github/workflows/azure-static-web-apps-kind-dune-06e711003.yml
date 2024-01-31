@@ -3,7 +3,7 @@ name: Deploy to Azure Static Web App Staging
 on:
   push:
     branches:
-      - test
+      - v-mmaaz-patch-1
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -31,8 +31,8 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "/" # Built app content directory - optional
-          test_branch: "test"
-          deployment_environment: "test"
+          test_branch: "v-mmaaz-patch-1"
+          deployment_environment: "v-mmaaz-patch-1"
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
